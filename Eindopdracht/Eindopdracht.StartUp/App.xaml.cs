@@ -15,9 +15,11 @@ public partial class App : Application {
     private void Application_Startup(object sender, StartupEventArgs e) {
         // database initialisatie
         ICarRepository carRepository = new CarMapper();
+        IEstablishmentRepository establishmentRepository = new EstablishmentMapper();
+        ICustomerRepository customerRepository = new CustomerMapper();
 
         // domain manager initialisatie
-        DomainManager domainManager = new DomainManager(carRepository);
+        DomainManager domainManager = new DomainManager(carRepository, establishmentRepository, customerRepository);
 
         // presentatie initialisatie
         _ = new EindopdrachtApplication(domainManager);

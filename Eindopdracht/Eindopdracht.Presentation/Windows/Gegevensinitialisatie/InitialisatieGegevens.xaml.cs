@@ -47,6 +47,13 @@ namespace Eindopdracht.Presentation.Windows.Gegevensinitialisatie {
             }
         }
 
+        private void FilledIn(object sender, TextChangedEventArgs e) {
+            SendButton.IsEnabled = 
+                !string.IsNullOrWhiteSpace(FilePathTextBoxVestiging.Text) &&
+                !string.IsNullOrWhiteSpace(FilePathTextBoxCar.Text) &&
+                !string.IsNullOrWhiteSpace(FilePathTextBoxCustomer.Text);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e) {
 
         }
