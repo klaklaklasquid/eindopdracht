@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eindopdracht.Database\Eindopdracht.Database.csproj" />
+    <ProjectReference Include="..\Eindopdracht.Logic\Eindopdracht.Logic.csproj" />
+    <ProjectReference Include="..\Eindopdracht.Presentation\Eindopdracht.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>
