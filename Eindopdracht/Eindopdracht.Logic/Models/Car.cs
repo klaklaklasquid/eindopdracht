@@ -6,40 +6,42 @@ using System.Threading.Tasks;
 
 namespace Eindopdracht.Logic.Models {
     public class Car {
-		private int _id;
+        private int _id;
 
-		public int Id {
-			get { return _id; }
-			set { _id = value; }
-		}
+        public int Id {
+            get { return _id; }
+            set {
+                _id = value;
+            }
+        }
 
-		private string _nummerplaat;
+        private string _nummerplaat;
 
-		public string Nummerplaat {
-			get { return _nummerplaat; }
-			set { _nummerplaat = value; }
-		}
+        public string Nummerplaat {
+            get { return _nummerplaat; }
+            set { _nummerplaat = value; }
+        }
 
-		private string _model;
+        private string _model;
 
-		public string Model {
-			get { return _model; }
-			set { _model = value; }
-		}
+        public string Model {
+            get { return _model; }
+            set { _model = value; }
+        }
 
-		private int _zitplaatsen;
+        private int _zitplaatsen;
 
-		public int Zitplaatsen {
-			get { return _zitplaatsen; }
-			set { _zitplaatsen = value; }
-		}
+        public int Zitplaatsen {
+            get { return _zitplaatsen; }
+            set { _zitplaatsen = value; }
+        }
 
-		private string _motortype;
+        private string _motortype;
 
         public string Motortype {
-			get { return _motortype; }
-			set { _motortype = value; }
-		}
+            get { return _motortype; }
+            set { _motortype = value; }
+        }
 
         public Car(int id, string nummerplaat, string model, int zitplaatsen, string motortype) {
             Id = id;
